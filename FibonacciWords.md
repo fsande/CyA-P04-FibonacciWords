@@ -59,10 +59,15 @@ Si el fichero de entrada contiene las siguientes palabras:
 
 `
 a
+
 b
+
 ba
+
 aaa
+
 bb
+
 bababbab
 `
 
