@@ -94,7 +94,7 @@ La documentación está escrita en en el código, y por lo tanto es relativament
 Doxygen puede hacer referencias cruzadas entre la documentación y el código, de modo que posibilita que
 el lector de un documento pueda referirse fácilmente al código fuente de la aplicación.
 Doxygen es un software libre y al igual que Javadoc extrae la documentación de los comentarios de los ficheros fuente. 
-La herramienta puede generar resultados en HTML así como en otros formatos.
+La herramienta puede generar documentación en HTML así como en otros formatos.
 
 A partir de esta práctica, todos los programas que se desarrollen deberán contener su documentación escrita en
 formato Doxygen.
@@ -106,7 +106,5 @@ Para iniciarse en el uso de Doxygen se propone que revise las siguientes referen
 ### Referencias
 * [Doxygen](https://www.doxygen.nl/index.html) 
 * [Documenting the code](https://www.doxygen.nl/manual/docblocks.html#specialblock) 
-* [How to document your code for
-* doxygen](https://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/doxygen-howto.html)
-* [Doxygen comments in
-* VSC](https://devblogs.microsoft.com/cppblog/visual-studio-code-c-extension-july-2020-update-doxygen-comments-and-logpoints/)
+* [How to document your code for doxygen](https://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/doxygen-howto.html)
+* [Doxygen comments in VSC](https://devblogs.microsoft.com/cppblog/visual-studio-code-c-extension-july-2020-update-doxygen-comments-and-logpoints/)
