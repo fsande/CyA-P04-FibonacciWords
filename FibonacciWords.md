@@ -3,11 +3,9 @@
 ### Objetivos
 Los objetivos de esta práctica son: 
 
-* Ejecutar comandos de Linux en la máquina virtual (VM) de la asignatura
-* Ser capaz de desarrollar, editar de forma remota usando VSC, compilar y ejecutar programas escritos en C++ en su VM
 * Que el alumnado codifique sus programas siguiendo lo estipulado en la Guía de Estilo de código de Google
-* Que el alumno sea capaz de formatear su códgo en VSC siguiendo la guia de Estilo de Google
 * Que el alumnado utilice la utilidad make y ficheros Makefile en sus proyectos
+* Que el alumnado conozca la herramienta Doxygen y utilice ese formato para la documentación de sus programas
 * Poner en práctica los conocimientos de programación estructurada
 * Practicar conocimientos de programación Orientada a Objetos en C++
 * Practicar operaciones de entrada/salida (E/S) en ficheros de texto
@@ -23,8 +21,9 @@ que se tendrán en cuenta a la hora de evaluar esta práctica:
 * El programa desarrollado deberá compilarse utilizando la herramienta `make` y un fichero `Makefile`
 * El comportamiento del programa debe ajustarse a lo solicitado en este documento.
 * Ha de acreditarse capacidad para introducir cambios en el programa desarrollado.
+* Los comentarios del programa han de escribirse en formato Doxygen.
 * Modularidad: el programa ha de escribirse de modo que las diferentes funcionalidades que se precisen sean encapsuladas en funciones y/o métodos cuya extensión textual se mantenga acotada.
-* El programa ha de ser fiel al paradigma de programación orientada a objetos (OOPP4).
+* El programa ha de ser fiel al paradigma de programación orientada a objetos (OOP).
 
 Si el alumnado tiene dudas respecto a cualquiera de estos aspectos, debiera acudir al
 foro de discusiones de la asignatura para plantearlas allı́. 
@@ -48,13 +47,11 @@ F<sub>6</sub> = "bababbab",
 F<sub>7</sub> = "abbabbababbab".
 
 ### Ejercicio práctico
-Diseñar e implementar en C++ un programa `fibonacci_words.cc` que dada una secuencia de palabras imprima en
-pantalla si son palabras de Fibonacci o no.
+Diseñar e implementar en C++ un programa `fibonacci_words.cc` que dada una secuencia de palabras indique 
+si son palabras de Fibonacci o no.
 Para aquellas que lo sean, el programa ha de indicar su posición en la secuencia.
 
-El programa tomará su entrada de un fichero de texto, y su salida la escribirá igualmente en un fichero de
-texto.
-
+El programa tomará su entrada de un fichero de texto, y su salida la escribirá igualmente en otro.
 Si el fichero de entrada contiene las siguientes palabras:
 
 ```
@@ -66,7 +63,7 @@ bb
 bababbab
 ```
 
-y el fichero se llama `input.txt`, cuando el programa se invoca como
+y el fichero se llama `input.txt`, cuando el programa se invoque como
 
 `$> ./fibonacci_words input.txt output.txt`
 
@@ -82,7 +79,7 @@ bababbab is the word number 6
 ```
 
 Cuando el programa se invoque sin pasarle parámetros en la línea de comandos, deberá finalizar su ejecución,
-imprimiendo en pantalla un mensaje de una línea que indique la forma correcta de ejecución.
+imprimiendo en pantalla un mensaje de una única línea que indique la forma correcta de ejecución.
 Si el programa se invoca pasándole por línea de comandos el parámetro `--help`:
 
 `$> ./fibonacci_words --help`
@@ -90,16 +87,26 @@ Si el programa se invoca pasándole por línea de comandos el parámetro `--help
 El programa deberá igualmente finalizar su ejecución pero indicando en este caso el modo correcto de invocarlo
 así como una breve explicación de la finalidad del programa.
 
+### Doxygen
+[Doxygen](https://www.doxygen.nl/index.html) es un generador de documentación para código fuente que permite
+generar la documentación completa de un proyecto software.
+La documentación está escrita en en el código, y por lo tanto es relativamente fácil de mantener actualizada. 
+Doxygen puede hacer referencias cruzadas entre la documentación y el código, de modo que posibilita que
+el lector de un documento pueda referirse fácilmente al código fuente de la aplicación.
+Doxygen es un software libre y al igual que Javadoc extrae la documentación de los comentarios de los ficheros fuente. 
+La herramienta puede generar resultados en HTML así como en otros formatos.
 
+A partir de esta práctica, todos los programas que se desarrollen deberán contener su documentación escrita en
+formato Doxygen.
+Se propone que no se ocupen tanto del uso de la herramienta en sí, sino de que la documentación de su código
+se escriba de aucuerdo al estándar de esa herramienta.
+Para iniciarse en el uso de Doxygen se propone que revise las siguientes referencias:
 
 
 ### Referencias
-* [Standard Template Library](http://www.cplusplus.com/reference/stl/)
-* [Fundamental types](https://en.cppreference.com/w/cpp/language/types)
-* [Bitwise Operators in C and C++](https://www.cprogramming.com/tutorial/bitwise_operators.html)
-* [C++ Tutor](http://pythontutor.com/cpp.html#mode=display) Visualización online de la ejecución de código C++
-* [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) Guía de estilo de código 
-* [Clang Format](https://clang.llvm.org/docs/ClangFormat.html) 
-* [Format C/C++ Code Using Clang-Format](https://leimao.github.io/blog/Clang-Format-Quick-Tutorial/)
-* [How to customize C++’s coding style in VSCode](https://medium.com/@zamhuang/vscode-how-to-customize-c-s-coding-style-in-vscode-ad16d87e93bf)
- 
+* [Doxygen](https://www.doxygen.nl/index.html) 
+* [Documenting the code](https://www.doxygen.nl/manual/docblocks.html#specialblock) 
+* [How to document your code for
+* doxygen](https://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/doxygen-howto.html)
+* [Doxygen comments in
+* VSC](https://devblogs.microsoft.com/cppblog/visual-studio-code-c-extension-july-2020-update-doxygen-comments-and-logpoints/)
