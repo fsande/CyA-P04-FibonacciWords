@@ -37,6 +37,7 @@ Las palabras de Fibonacci, F<sub>1</sub>, F<sub>2</sub>, F<sub>3</sub>, ... se d
 * F<sub>1</sub> = "a"
 * F<sub>2</sub> = "b"
 * Para cualquier n ≥ 3, F<sub>n</sub> es el resultado de concatenar F<sub>n-2</sub> con F<sub>n-1</sub>.
+
 Las primeras siete palabras de la secuencia de Fibonacci son:
 F<sub>1</sub> = "a",
 F<sub>2</sub> = "b",
@@ -46,9 +47,51 @@ F<sub>5</sub> = "abbab",
 F<sub>6</sub> = "bababbab",
 F<sub>7</sub> = "abbabbababbab".
 
-
-
 ### Ejercicio práctico
+Diseñar e implementar en C++ un programa `fibonacci_words.cc` que dada una secuencia de palabras imprima en
+pantalla si son palabras de Fibonacci o no.
+Para aquellas que lo sean, el programa ha de indicar su posición en la secuencia.
+
+El programa tomará su entrada de un fichero de texto, y su salida la escribirá igualmente en un fichero de
+texto.
+
+Si el fichero de entrada contiene las siguientes palabras:
+
+`
+a
+b
+ba
+aaa
+bb
+bababbab
+`
+
+y el fichero se llama `input.txt`, cuando el programa se invoca como
+
+`$> ./fibonacci_words input.txt output.txt`
+
+el contenido del fichero `output.txt` debiera ser el que se muestra a continuación:
+
+`
+a is the word number 1
+b is the word number 2
+ba is not a Fibonacci word
+aaa is not a Fibonacci word
+bb is not a Fibonacci word
+bababbab is the word number 6
+`
+
+Cuando el programa se invoque sin pasarle parámetros en la línea de comandos, deberá finalizar su ejecución,
+imprimiendo en pantalla un mensaje de una línea que indique la forma correcta de ejecución.
+Si el programa se invoca pasándole por línea de comandos el parámetro `--help`:
+
+`$> ./fibonacci_words --help`
+
+El programa deberá igualmente finalizar su ejecución pero indicando en este caso el modo correcto de invocarlo
+así como una breve explicación de la finalidad del programa.
+
+
+
 
 ### Referencias
 * [Standard Template Library](http://www.cplusplus.com/reference/stl/)
