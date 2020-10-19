@@ -57,19 +57,14 @@ texto.
 
 Si el fichero de entrada contiene las siguientes palabras:
 
-`
+```
 a
-
 b
-
 ba
-
 aaa
-
 bb
-
 bababbab
-`
+```
 
 y el fichero se llama `input.txt`, cuando el programa se invoca como
 
