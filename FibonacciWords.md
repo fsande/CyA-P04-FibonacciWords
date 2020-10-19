@@ -36,7 +36,7 @@ También el profesorado de la asignatura intervendrá en las discusiones que pud
 Las palabras de Fibonacci, F<sub>1</sub>, F<sub>2</sub>, F<sub>3</sub>, ... se definen como:
 F<sub>1</sub> = "a"
 F<sub>2</sub> = "b"
-Para cualquier n $\geq$ 3, F<sub>n</sub> es el resultado de concatenar F<sub>n-2</sub> con F<sub>n-1</sub>.
+Para cualquier n ≥ 3, F<sub>n</sub> es el resultado de concatenar F<sub>n-2</sub> con F<sub>n-1</sub>.
 Las primeras siete palabras de la secuencia de Fibonacci son:
 F<sub>1</sub> = "a",
 F<sub>2</sub> = "b",
