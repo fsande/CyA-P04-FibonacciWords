@@ -3,11 +3,9 @@
 ### Objetivos
 Los objetivos de esta práctica son: 
 
-* Que el alumnado codifique sus programas siguiendo lo estipulado en la Guía de Estilo de código de Google
-* Que el alumnado utilice la utilidad make y ficheros Makefile en sus proyectos
 * Que el alumnado conozca la herramienta Doxygen y utilice ese formato para la documentación de sus programas
 * Poner en práctica los conocimientos de programación estructurada
-* Practicar conocimientos de programación Orientada a Objetos en C++
+* Poer en práctica conocimientos de programación Orientada a Objetos en C++
 * Practicar operaciones de entrada/salida (E/S) en ficheros de texto
 
 ### Rúbrica de evaluacion de esta práctica
@@ -50,6 +48,9 @@ F<sub>7</sub> = "abbabbababbab".
 Diseñar e implementar en C++ un programa `fibonacci_words.cc` que dada una secuencia de palabras indique 
 si son palabras de Fibonacci o no.
 Para aquellas que lo sean, el programa ha de indicar su posición en la secuencia.
+
+Realice un enfoque orientado a objetos para el desarrollo de su programa: identifique objetos en el problema
+que se propone resolver y modele esos objetos mediante las clases y métodos que considere más adecuados.
 
 El programa tomará su entrada de un fichero de texto, y su salida la escribirá igualmente en otro.
 Si el fichero de entrada contiene las siguientes palabras:
@@ -100,8 +101,7 @@ A partir de esta práctica, todos los programas que se desarrollen deberán cont
 formato Doxygen.
 Se propone que no se ocupen tanto del uso de la herramienta en sí, sino de que la documentación de su código
 se escriba de aucuerdo al estándar de esa herramienta.
-Para iniciarse en el uso de Doxygen se propone que revise las siguientes referencias:
-
+Para iniciarse en el uso de Doxygen se propone que estudie las siguientes referencias:
 
 ### Referencias
 * [Doxygen](https://www.doxygen.nl/index.html) 
