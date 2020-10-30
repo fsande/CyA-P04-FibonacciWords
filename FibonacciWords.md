@@ -52,7 +52,8 @@ Para aquellas que lo sean, el programa ha de indicar su posición en la secuenci
 Realice un enfoque orientado a objetos para el desarrollo de su programa: identifique objetos en el problema
 que se propone resolver y modele esos objetos mediante las clases y métodos que considere más adecuados.
 
-El programa tomará su entrada de un fichero de texto, y su salida la escribirá igualmente en otro.
+El programa tomará su entrada de un fichero de texto, y su salida la escribirá igualmente en otro fichero cuyo
+nombre introducirá el usuario por línea de comandos.
 Si el fichero de entrada contiene las siguientes palabras:
 
 ```
@@ -99,8 +100,8 @@ La herramienta puede generar documentación en HTML así como en otros formatos.
 
 A partir de esta práctica, todos los programas que se desarrollen deberán contener su documentación escrita en
 formato Doxygen.
-Se propone que no se ocupen tanto del uso de la herramienta en sí, sino de que la documentación de su código
-se escriba de aucuerdo al estándar de esa herramienta.
+No será necesario que utilicen -aunque se puede hacer, si se quiere practicar con ella- la herramienta Doxygen
+sino que lo que se requerirá es que la documentación de su código se escriba de aucuerdo al estándar de esa herramienta.
 Para iniciarse en el uso de Doxygen se propone que estudie las siguientes referencias:
 
 ### Referencias
