@@ -56,12 +56,12 @@ El programa tomará su entrada de un fichero de texto, y su salida la escribirá
 Si el fichero de entrada contiene las siguientes palabras:
 
 ```
-a
 b
-ba
 aaa
 bb
 bababbab
+a
+ba
 ```
 
 y el fichero se llama `input.txt`, cuando el programa se invoque como
@@ -71,12 +71,12 @@ y el fichero se llama `input.txt`, cuando el programa se invoque como
 el contenido del fichero `output.txt` debiera ser el que se muestra a continuación:
 
 ```
-a is the word number 1
 b is the word number 2
-ba is not a Fibonacci word
 aaa is not a Fibonacci word
 bb is not a Fibonacci word
 bababbab is the word number 6
+a is the word number 1
+ba is not a Fibonacci word
 ```
 
 Cuando el programa se invoque sin pasarle parámetros en la línea de comandos, deberá finalizar su ejecución,
